@@ -20,6 +20,7 @@ public class Account {
 		this.accountNumber = random.nextInt(1000_0000_0) + 1000_0000;
 		
 		this.accountAmount = Double.valueOf(accountAmount);
+		//sayHi();
 	}
 	
 	public Account(Double accountAmount) {
@@ -80,7 +81,7 @@ public class Account {
 	/*
 	 * Give amount to everyone
 	 */
-	protected static void sayHI() {
+	protected static void sayHi() {
 		System.out.println(phrase);
 	}
 	
