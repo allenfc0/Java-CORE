@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
+import java.util.Stack;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -24,7 +25,8 @@ public class Runner {
 		//treeSetListExample();
 		//hashMapExample();
 		//treeMapExample();
-		queueExample();
+		//queueExample();
+		stackExample();
 	}
 	
 	private static void linkedListExample() {
@@ -221,6 +223,28 @@ public class Runner {
 		queue.clear();
 		queue2.clear();
 		
+	}
+	
+	// LIFO
+	private static void stackExample() {
+		Stack<String> stack = new Stack<String>();
+		
+		stack.push("Hello");
+		stack.push("Allen");
+		stack.push("Java");
+		stack.push("Program");
+		
+		System.out.println(stack);
+		
+		stack.pop();
+		
+		System.out.println(stack);
+		
+		System.out.println(stack.peek());
+		
+		System.out.println("Is this stack empty? " + stack.empty());
+		
+		System.out.println("Stack position of word 'Allen': " + stack.search("Allen"));
 	}
 	
 }
