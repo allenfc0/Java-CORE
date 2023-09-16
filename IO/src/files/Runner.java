@@ -6,7 +6,8 @@ import java.io.IOException;
 public class Runner {
 	
 	public static void main(String[] args) throws IOException {
-		createFile();
+		//createFile();
+		separatorTypes();
 	}
 	
 	private static void createFile() throws IOException {
@@ -44,5 +45,10 @@ public class Runner {
 		//textFile.delete();
 	}
 	
-	
+	private static void separatorTypes() {
+		System.out.println(File.separator);
+		System.out.println(File.separatorChar);
+		System.out.println(File.pathSeparator);
+		System.out.println(File.pathSeparatorChar);
+	}
 }
